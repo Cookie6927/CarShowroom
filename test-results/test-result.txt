@@ -1,0 +1,33 @@
+=== [94mTest Reports[39m
+FORMAT  FILE
+──────  ──────────────────────────────────────────────────
+txt     test-results\test-result.txt
+txt     test-results\test-run-id.txt
+junit   test-results\test-result-707dM00000hwYFC-junit.xml
+json    test-results\test-result-707dM00000hwYFC.json
+
+=== [94mTest Results[39m
+TEST NAME                                        OUTCOME  MESSAGE  RUNTIME (MS)
+───────────────────────────────────────────────  ───────  ───────  ────────────
+UpdateBookingStatusTest.testBookingStatusUpdate  [32mPass[39m              422
+
+=== [94mTest Summary[39m
+NAME                 VALUE
+───────────────────  ──────────────────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            1
+Passing              1
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Start Time      Jul 23, 2025 1:07 AM
+Test Execution Time  422 ms
+Test Total Time      422 ms
+Command Time         2383 ms
+Hostname             https://creative-otter-8zok7r-dev-ed.trailblaze.my.salesforce.com
+Org Id               00DdM00000SpgbPUAR
+Username             ojasjayant13@creative-otter-8zok7r.com
+Test Run Id          707dM00000hwYFC
+User Id              005dM00000He3wfQAB
+

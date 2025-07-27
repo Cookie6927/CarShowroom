@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2025-07-23T00:55:06+05:30" hostname="https://creative-otter-8zok7r-dev-ed.trailblaze.my.salesforce.com" tests="1" failures="1"  errors="0"  time="0.49">
+        <properties>
+            <property name="outcome" value="Failed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="0"/>
+            <property name="failing" value="1"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="0%"/>
+            <property name="failRate" value="100%"/>
+            <property name="testStartTime" value="Jul 23, 2025 12:55 AM"/>
+            <property name="testExecutionTime" value="0.49 s"/>
+            <property name="testTotalTime" value="0.49 s"/>
+            <property name="commandTime" value="2.66 s"/>
+            <property name="hostname" value="https://creative-otter-8zok7r-dev-ed.trailblaze.my.salesforce.com"/>
+            <property name="orgId" value="00DdM00000SpgbPUAR"/>
+            <property name="username" value="ojasjayant13@creative-otter-8zok7r.com"/>
+            <property name="testRunId" value="707dM00000hwVm0"/>
+            <property name="userId" value="005dM00000He3wfQAB"/>
+        </properties>
+        <testcase name="testBookingStatusUpdate" classname="UpdateBookingStatusTest" time="0.49">
+            <failure message="System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Sales Order should not be created if booking isn’t confirmed: []"><![CDATA[Class.UpdateBookingStatusTest.testBookingStatusUpdate: line 34, column 1]]></failure>
+        </testcase>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,46 @@
+{
+    "summary": {
+        "outcome": "Failed",
+        "testsRan": 1,
+        "passing": 0,
+        "failing": 1,
+        "skipped": 0,
+        "passRate": "0%",
+        "failRate": "100%",
+        "testStartTime": "Jul 23, 2025 12:54 AM",
+        "testExecutionTime": "78 ms",
+        "testTotalTime": "78 ms",
+        "commandTime": "2027 ms",
+        "hostname": "https://creative-otter-8zok7r-dev-ed.trailblaze.my.salesforce.com",
+        "orgId": "00DdM00000SpgbPUAR",
+        "username": "ojasjayant13@creative-otter-8zok7r.com",
+        "testRunId": "707dM00000hwaQa",
+        "userId": "005dM00000He3wfQAB"
+    },
+    "tests": [
+        {
+            "attributes": {
+                "type": "ApexTestResult",
+                "url": "/services/data/v47.0/tooling/sobjects/ApexTestResult/07MdM00000B9FZNUA3"
+            },
+            "Id": "07MdM00000B9FZNUA3",
+            "QueueItemId": "709dM00000DfKJRQA3",
+            "StackTrace": "Class.UpdateBookingStatusTest.testBookingStatusUpdate: line 16, column 1",
+            "Message": "System.DmlException: Insert failed. First exception on row 0; first error: INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST, Manufacturer: bad value for restricted picklist field: TestCo: [Manufacturer__c]",
+            "AsyncApexJobId": "707dM00000hwaQaQAI",
+            "MethodName": "testBookingStatusUpdate",
+            "Outcome": "Fail",
+            "ApexClass": {
+                "attributes": {
+                    "type": "ApexClass",
+                    "url": "/services/data/v47.0/tooling/sobjects/ApexClass/01pdM00000ITlafQAD"
+                },
+                "Id": "01pdM00000ITlafQAD",
+                "Name": "UpdateBookingStatusTest",
+                "NamespacePrefix": null
+            },
+            "RunTime": 78,
+            "FullName": "UpdateBookingStatusTest.testBookingStatusUpdate"
+        }
+    ]
+}

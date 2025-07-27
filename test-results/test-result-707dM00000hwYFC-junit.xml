@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2025-07-23T01:07:02+05:30" hostname="https://creative-otter-8zok7r-dev-ed.trailblaze.my.salesforce.com" tests="1" failures="0"  errors="0"  time="0.42">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="1"/>
+            <property name="passing" value="1"/>
+            <property name="failing" value="0"/>
+            <property name="skipped" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Jul 23, 2025 1:07 AM"/>
+            <property name="testExecutionTime" value="0.42 s"/>
+            <property name="testTotalTime" value="0.42 s"/>
+            <property name="commandTime" value="2.38 s"/>
+            <property name="hostname" value="https://creative-otter-8zok7r-dev-ed.trailblaze.my.salesforce.com"/>
+            <property name="orgId" value="00DdM00000SpgbPUAR"/>
+            <property name="username" value="ojasjayant13@creative-otter-8zok7r.com"/>
+            <property name="testRunId" value="707dM00000hwYFC"/>
+            <property name="userId" value="005dM00000He3wfQAB"/>
+        </properties>
+        <testcase name="testBookingStatusUpdate" classname="UpdateBookingStatusTest" time="0.42">
+        </testcase>
+    </testsuite>
+</testsuites>
