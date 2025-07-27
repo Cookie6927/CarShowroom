@@ -20,8 +20,8 @@ jobs:
 
       - name: Authenticate to Salesforce
         run: |
-          echo "${{ secrets.SF_AUTH_URL }}" > authURL.txt
-          sfdx force:auth:sfdxurl:store -f ./authURL.txt -a carCRM --setdefaultusername
+            echo "${{ secrets.SF_AUTH_URL }}" > authURL.txt
+            sfdx force:auth:sfdxurl:store -f ./authURL.txt -a carCRM --setdefaultusername
 
       - name: Verify org connection
         run: sfdx force:org:display -u carCRM
