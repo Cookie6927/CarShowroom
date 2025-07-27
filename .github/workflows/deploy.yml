@@ -18,10 +18,13 @@ jobs:
           npm install --global sfdx-cli
           sfdx --version
 
-      - name: Authenticate to Salesforce using Auth URL
+      - name: Authenticate to Salesforce
         run: |
           echo "${{ secrets.SF_AUTH_URL }}" > authURL.txt
-          sfdx auth:sfdxurl:store --sfdx-url-file authURL.txt --setdefaultusername --setalias carCRM
+          sfdx force:auth:sfdxurl:store -f ./authURL.txt -a carCRM --setdefaultusername
+
+      - name: Verify org connection
+        run: sfdx force:org:display -u carCRM
 
       - name: Deploy source to Salesforce
         run: |
