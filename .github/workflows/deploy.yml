@@ -1,0 +1,30 @@
+name: Deploy to Salesforce
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install Salesforce CLI
+      run: |
+        npm install --global sfdx-cli
+
+    - name: Authenticate to Org
+      run: sfdx auth:sfdxurl:store -f ./authURL.txt -a carCRM --setdefaultusername
+
+    - name: Deploy Source to Org
+      run: sfdx force:source:deploy -p force-app --json --loglevel fatal
+
+    - name: Run Apex Tests
+      run: sfdx force:apex:test:run --resultformat human --outputdir test-results --wait 10
+
+    - name: Create auth file
+      run: echo "${{ secrets.SFDX_AUTH_URL }}" > authURL.txt
